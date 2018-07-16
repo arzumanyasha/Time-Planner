@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="168dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4233cc"
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="232dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="false"
+            android:text="TextView"
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_more_vert_black_24dp"
+        android:entries="@array/deletelist"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:focusable="false"/>
+</LinearLayout>
