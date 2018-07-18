@@ -90,10 +90,15 @@ public class TaskInfoActivity extends AppCompatActivity implements DescriptionDi
         dateTxtView = (TextView) findViewById(R.id.dateTxtView);
         //deleteSpinner = (Spinner) findViewById(R.id.spinner2);
 
+        Date startTime = new Date(currentDate.get(Calendar.HOUR_OF_DAY));
+        startdate = startTime;
+        Date endTime = new Date(currentDate.get(Calendar.HOUR_OF_DAY));
+        enddate = endTime;
 
         day = currentDate.get(Calendar.DAY_OF_MONTH);
         month = currentDate.get(Calendar.MONTH);
         year = currentDate.get(Calendar.YEAR);
+        taskDate = new Date(year, (month+1), day, 0, 0);
         //month++;
 
         dateTxtView.setText(day + "/" + (month+1) + "/" + year);
